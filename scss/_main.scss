@@ -1,0 +1,7 @@
+@import "./cssReset";
+@import "./header";
+@import "./mixin";
+$background-color: white;
+body {
+  background-color: $background-color;
+}
