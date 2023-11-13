@@ -122,6 +122,9 @@ h6 {
   border: 1px solid #cccccc;
   cursor: pointer; }
 
+.header__center--magnify:hover .tooltiptext {
+  visibility: visible; }
+
 .header__center--magnify:hover {
   background-color: #f0f0f0; }
 
@@ -133,10 +136,34 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
 
 .header__center--speech:hover {
   background-color: #c8c8c8; }
+
+.tooltiptext {
+  visibility: hidden;
+  width: auto;
+  height: 35px;
+  background-color: #6f6f6f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  word-spacing: -2px;
+  display: flex;
+  text-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 58px;
+  font-size: 11px;
+  font-weight: 700; }
+
+.header__center--speech:hover .tooltiptext {
+  visibility: visible; }
 
 .header__right {
   display: flex;
@@ -159,6 +186,9 @@ h6 {
 .header__right--create:hover {
   background-color: #e5e5e5; }
 
+.header__right--create:hover .tooltiptext {
+  visibility: visible; }
+
 .header__right--bell {
   cursor: pointer;
   width: 40px;
@@ -170,6 +200,12 @@ h6 {
 
 .header__right--bell:hover {
   background-color: #e5e5e5; }
+
+.header__right--bell:hover .tooltiptext {
+  visibility: visible; }
+
+.header__right--img-corner {
+  cursor: pointer; }
 
 body {
   background-color: white; }
