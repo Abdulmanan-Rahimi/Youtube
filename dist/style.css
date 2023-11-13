@@ -207,5 +207,15 @@ h6 {
 .header__right--img-corner {
   cursor: pointer; }
 
+.side-bar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  min-width: 250px;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: red;
+  padding-right: 10px; }
+
 body {
   background-color: white; }
